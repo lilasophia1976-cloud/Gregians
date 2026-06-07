@@ -1,0 +1,70 @@
+.hidden{
+  display: none;
+}
+
+.box{
+     border: 1px solid #2222dd;
+     width: 600px; 
+     height: 500px;
+     margin: auto;
+     position: relative;
+   
+}
+
+#r1{
+  background: yellow;
+
+}
+
+#r2{
+  background: pink;
+}
+
+#r3{
+  background: blue;
+}
+
+#r4{
+  background: pink;
+}
+
+#counter{
+  border: 1px solid black;
+  width: 200px;
+  margin:auto;
+  height:300px;
+
+}
+
+.key{
+  margin:auto;
+  position:relative;
+  border: 1px solid pink;
+}
+
+#surprise{
+  background: green;
+  width: 100px;
+  margin:auto;
+  height:100px;
+}
+
+#creature{
+  width: fit-content;
+  border: 1px solid pink;
+
+
+}
+#move{
+    background: linear-gradient(
+        to right,
+        #ff8e8e,
+        #ff006a
+    ) ;
+    height: 300px;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
