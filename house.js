@@ -1,24 +1,28 @@
 
 
-document.getElementById("click_here").addEventListener("click", () => {
+document.getElementById("start_button").addEventListener("click", () => {
   document.getElementById("starter").hidden = true;
   document.getElementById("room1").hidden = false;
+  // room 1 
 });
 
 document.getElementById("door1").addEventListener("click", () => {
   document.getElementById("room1").hidden = true;
   document.getElementById("room2").hidden = false;
+  console.log("opened door 1")
 });
 
 
 document.getElementById("door2").addEventListener("click", () => {
   document.getElementById("room1").hidden = true;
   document.getElementById("room3").hidden = false;
+  console.log("opened door 2")
 });
 
 document.getElementById("door3").addEventListener("click", () => {
   document.getElementById("room1").hidden = true;
   document.getElementById("room4").hidden = false;
+  console.log("opened door 3")
 });
 
 document.getElementById("door2leave2").addEventListener("click", () => {
@@ -38,6 +42,7 @@ document.getElementById("door2leave4").addEventListener("click", () => {
 document.getElementById("door4").addEventListener("click", () => {
   document.getElementById("room1").hidden = true;
   document.getElementById("room5").hidden = false;
+  console.log("open door 5 - Senance Room ")
 });
 document.getElementById("door2leave5").addEventListener("click", () => {
   document.getElementById("room5").hidden = true;
@@ -112,3 +117,8 @@ $(".item2").hover(function() {
 
 
 
+$(".doors").click(function() {
+  new Audio("resources/audio/door_open.mp3").play()
+
+
+})
