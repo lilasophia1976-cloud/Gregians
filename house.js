@@ -1,10 +1,14 @@
 
+let audioPlayer = document.getElementById("audioSrc")
 
+
+// plays title screen music
+audioPlayer.play()
 
 document.getElementById("start_button").addEventListener("click", () => {
   document.getElementById("starter").hidden = true;
   document.getElementById("room1").hidden = false;
-  document.getElementById("title-theme").pause()
+  audioPlayer.pause()
   // room 1 
 });
 
